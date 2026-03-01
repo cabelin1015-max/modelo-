@@ -6,86 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
 
+    <!-- tirei img/ daqui também -->
+    <link rel="shortcut icon" href="Logo-site.png">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            background: #141414;
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-        }
-
-        .logo-fake {
-            font-size: 28px;
-            font-weight: 600;
-            color: red;
-            margin-top: 20px;
-        }
-
-        .perfil__foto {
-            width: 120px;
-            height: 120px;
-            background: #333;
-            border-radius: 10px;
-            margin: auto;
-        }
-
-        .mais {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-            background: #222;
-            color: white;
-        }
-
-        .perfil__texto {
-            margin-top: 10px;
-        }
-
-        .botao {
-            margin-top: 30px;
-            padding: 10px 20px;
-            background: transparent;
-            border: 1px solid white;
-            color: white;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
 
     <div class="celular__cabeca">
-        <div class="logo-fake">NETFLIX</div>
+        <!-- removido img/ -->
+        <img src="Netflix_logo.png" alt="Logo da netflix" class="celular__logo">
+        <img src="Editar-perfil.png" alt="Gerenciar Perfis" class="celular__edit">
     </div>
 
     <section class="escolha">
         <h1 class="escolha__texto">Quem está assistindo?</h1>
 
-        <ul class="escolha__perfil" style="list-style: none; padding: 0;">
-            
+        <ul class="escolha__perfil">
             <li class="escolha__lista">
-                <a href="principal.html" class="perfil" style="text-decoration: none; color: white;">
-                    <div class="perfil__foto"></div>
+                <a href="principal.html" class="perfil">
+                    <img src="Perfil.jpg" alt="Foto de perfil" class="perfil__foto">
                 </a>
                 <p class="perfil__texto">Lívia</p>
             </li>
 
-            <li class="escolha__lista" style="margin-top: 30px;">
-                <div class="perfil__foto mais">+</div>
+            <li class="escolha__lista">
+                <img src="Mais-perfil.png" alt="Adicionar perfil" class="perfil__foto mais">
                 <p class="perfil__texto">Adicionar perfis</p>
             </li>
-
         </ul>
 
         <button class="botao">Gerenciar perfis</button>
-
     </section>
 
 </body>
